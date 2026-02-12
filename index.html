@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Spartan Details - Premium Car Care Melbourne</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#CF1A20",
+                        "background-light": "#F3F4F6",
+                        "background-dark": "#0D0D0D", // Deep black for contrast
+                        "card-dark": "#1A1A1A", // Slightly lighter for cards
+                        "card-light": "#FFFFFF",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F3F4F6",
+                    },
+                    fontFamily: {
+                        display: ["Oswald", "sans-serif"],
+                        body: ["Roboto", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+                        'texture': "url('https://www.transparenttextures.com/patterns/carbon-fibre.png')",
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1A1A1A;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CF1A20;
+            border-radius: 4px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-300">
+    <nav class="fixed w-full z-50 bg-background-dark/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <img src="./photos/spartan (1).jpg" alt="Shine Masters Logo" class="h-14 w-auto object-contain">
+                        <span class="font-display font-bold text-2xl text-white tracking-wider uppercase">Spartan
+                            Details</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-8">
+                            <a class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium uppercase transition-colors"
+                                href="#">Home</a>
+                            <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium uppercase transition-colors"
+                                href="#about">About Us</a>
+                            <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium uppercase transition-colors"
+                                href="#services">Services</a>
+                            <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium uppercase transition-colors"
+                                href="#pricing">Pricing</a>
+                            <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium uppercase transition-colors"
+                                href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a class="bg-primary text-white px-6 py-2.5 rounded hover:bg-red-700 transition-all font-bold uppercase tracking-wide text-sm shadow-lg shadow-red-900/50"
+                        href="#booking">Book Appointment</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button
+                        class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        type="button">
+                        <span class="sr-only">Open main menu</span>
+                        <span class="material-icons-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="relative h-screen bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-20">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-1 rounded-full border border-white/20 mb-6">
+                    <span class="material-icons-outlined text-primary text-sm">verified</span>
+                    <span class="text-white text-xs font-bold uppercase tracking-widest">500+ Car Owners Trust
+                        Expertise</span>
+                </div>
+                <h1
+                    class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 uppercase">
+                    WHERE <span class="text-primary">CHAMPIONS</span> <br /> BRING RIDES
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl font-light">
+                    Bring back your vehicle's shine and elegance with our professional detailing services in Melbourne.
+                    From exterior polish to interior care, we restore every detail.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="bg-primary text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-red-700 transition-all shadow-lg shadow-red-900/40 flex items-center justify-center gap-2"
+                        href="#services">
+                        Get Started Today
+                        <span class="material-icons-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <a class="bg-transparent border border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2"
+                        href="#about">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+            <span class="material-icons-outlined text-white text-3xl">keyboard_arrow_down</span>
+        </div>
+    </div>
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-card-dark border border-gray-800 p-6 rounded-xl shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span class="material-icons-outlined text-6xl text-white">directions_car</span>
+                </div>
+                <h3 class="text-white font-display text-xl font-bold uppercase mb-2">More Than 700+ Cars</h3>
+                <p class="text-gray-400 text-sm mb-4">Revived Professional Detailing</p>
+                <div class="flex items-center gap-3 mt-4">
+                    <div class="text-4xl font-bold text-white">4.9/5</div>
+                    <div class="flex text-primary">
+                        <span class="material-icons-outlined text-sm">star</span>
+                        <span class="material-icons-outlined text-sm">star</span>
+                        <span class="material-icons-outlined text-sm">star</span>
+                        <span class="material-icons-outlined text-sm">star</span>
+                        <span class="material-icons-outlined text-sm">star</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-1">Based on 300+ reviews</p>
+            </div>
+            <div class="bg-card-dark border border-gray-800 p-6 rounded-xl shadow-2xl">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="material-icons-outlined text-primary">schedule</span>
+                    <h3 class="text-white font-display text-lg font-bold uppercase">Working Hours:</h3>
+                </div>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between text-gray-300">
+                        <span>Monday - Friday:</span>
+                        <span>9 AM - 6 PM</span>
+                    </div>
+                    <div class="flex justify-between text-gray-300">
+                        <span>Saturday:</span>
+                        <span>10 AM - 4 PM</span>
+                    </div>
+                    <div class="flex justify-between text-gray-300">
+                        <span>Sunday:</span>
+                        <span class="text-primary font-bold">Closed</span>
+                    </div>
+                </div>
+                <a class="mt-6 inline-flex items-center gap-2 text-primary font-bold uppercase text-xs hover:text-white transition-colors"
+                    href="#">
+                    Get A Free Quote <span class="material-icons-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="bg-card-dark border border-gray-800 p-0 rounded-xl shadow-2xl overflow-hidden relative group">
+                <img alt="Detailing working"
+                    class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdFHn2VNXnbcaKxAeHBBVe9nxM5ldzp0asxSjIgltdFrz7zLxJpEh7kdufI-3ov5omMLJJuZ-7m7IbkLgWwpmL1qsEo0k5RHYiKGWjxWDjlabnygLFDVWNixY1yxhfwYPQLvlufRuLLan2NIVWt0RhSWDoTuPJtfjvzHhgZEePSTFHrFESpyrFRlbSbaOTvXdNppMicjecCZKdWQrX1V4OCLvvlmqMZBrmcESFJwZZfhQZx7y3OW8pc9im50yDSJ3krxxhrYd_zEs" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center gap-3 text-white">
+                        <span
+                            class="material-icons-outlined text-primary bg-white/10 p-2 rounded-full">location_on</span>
+                        <div>
+                            <p class="font-bold text-sm">Narre Warren, Melbourne</p>
+                            <p class="text-xs text-gray-400">Victoria, Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-20 bg-background-dark relative overflow-hidden" id="about">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="material-icons-outlined text-primary text-sm">stars</span>
+                        <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">About Us</span>
+                    </div>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6 uppercase leading-tight">
+                        Delivering Personalized Car Care Through <span class="text-primary">Detailing, Repair, and
+                            Maintenance</span> Services.
+                    </h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        At Spartan Details, we are passionate about cars. Located in Melbourne, we provide
+                        top-tier detailing services focused on quality and customer satisfaction. Whether it's a simple
+                        wash or a full ceramic coating, we treat every vehicle as if it were our own.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <span class="material-icons-outlined text-primary text-2xl mt-1">task_alt</span>
+                            <div>
+                                <h4 class="text-white font-bold uppercase mb-1">Expert Technicians</h4>
+                                <p class="text-sm text-gray-500">Skilled professionals dedicated to perfection.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-icons-outlined text-primary text-2xl mt-1">inventory_2</span>
+                            <div>
+                                <h4 class="text-white font-bold uppercase mb-1">Premium Products</h4>
+                                <p class="text-sm text-gray-500">Using only the best products in the market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <a class="bg-primary text-white px-6 py-3 rounded font-bold uppercase tracking-wider hover:bg-red-700 transition-all flex items-center gap-2"
+                            href="#contact">
+                            More About Us <span class="material-icons-outlined text-sm">arrow_forward</span>
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-gray-800 p-2 rounded-full text-white">
+                                <span class="material-icons-outlined">phone</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400 uppercase font-bold">Contact Info</p>
+                                <p class="text-white font-bold">0494-078-176</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Car Detailing Action" class="relative w-full object-contain h-[500px]"
+                        src="spartan maaan.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-black" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 mb-4 justify-center">
+                    <span class="material-icons-outlined text-primary text-sm">miscellaneous_services</span>
+                    <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Our Services</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white uppercase mb-4">Quality Services
+                    Designed To <br /> <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Keep Cars
+                        New</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="bg-card-dark border border-gray-800 p-8 rounded-xl group hover:border-primary/50 transition-all hover:-translate-y-2 duration-300">
+                    <div
+                        class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span class="material-icons-outlined text-white text-3xl">cleaning_services</span>
+                    </div>
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-3">Exterior Detailing &amp;
+                        Polishing</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Revives your car's exterior with a deep clean,
+                        polish &amp; protection layer to shield against elements.</p>
+                    <a class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-600 text-gray-400 group-hover:border-primary group-hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-icons-outlined text-sm">arrow_outward</span>
+                    </a>
+                </div>
+                <div
+                    class="bg-card-dark border border-gray-800 p-8 rounded-xl group hover:border-primary/50 transition-all hover:-translate-y-2 duration-300">
+                    <div
+                        class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span class="material-icons-outlined text-white text-3xl">invert_colors</span>
+                    </div>
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-3">Paint Correction &amp;
+                        Protection</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Remove swirl marks and scratches. Protect your
+                        paint with high-end sealants.</p>
+                    <a class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-600 text-gray-400 group-hover:border-primary group-hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-icons-outlined text-sm">arrow_outward</span>
+                    </a>
+                </div>
+                <div
+                    class="bg-card-dark border border-gray-800 p-8 rounded-xl group hover:border-primary/50 transition-all hover:-translate-y-2 duration-300">
+                    <div
+                        class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span class="material-icons-outlined text-white text-3xl">airline_seat_recline_extra</span>
+                    </div>
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-3">Interior Deep Cleaning</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Complete interior restoration, leather
+                        conditioning, and steam cleaning for a fresh feel.</p>
+                    <a class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-600 text-gray-400 group-hover:border-primary group-hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-icons-outlined text-sm">arrow_outward</span>
+                    </a>
+                </div>
+                <div
+                    class="bg-card-dark border border-gray-800 p-8 rounded-xl group hover:border-primary/50 transition-all hover:-translate-y-2 duration-300">
+                    <div
+                        class="bg-gray-800 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span class="material-icons-outlined text-white text-3xl">diamond</span>
+                    </div>
+                    <h3 class="text-white font-display text-xl font-bold uppercase mb-3">Ceramic Coating</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Long-lasting hydrophobic protection that gives
+                        your car a showroom shine for years.</p>
+                    <a class="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-600 text-gray-400 group-hover:border-primary group-hover:text-primary transition-all"
+                        href="#">
+                        <span class="material-icons-outlined text-sm">arrow_outward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-gray-400 text-sm">
+                    <span class="text-primary font-bold uppercase px-2 py-1 bg-primary/10 rounded mr-2">Free</span>
+                    Feel the freedom, live the moment – <a
+                        class="text-primary underline hover:text-white transition-colors" href="#">Join The Excitement
+                        Today!</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-dark relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="material-icons-outlined text-primary text-sm">verified_user</span>
+                    <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Why Choose Us</span>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between items-end gap-8">
+                    <h2
+                        class="font-display text-4xl md:text-5xl font-bold text-white uppercase leading-tight max-w-2xl">
+                        Trusted Expert Delivering <br /> Quality Auto Care
+                    </h2>
+                    <p class="text-gray-400 max-w-md text-sm leading-relaxed border-l-2 border-primary pl-4">
+                        With years of hands-on experience and a passion for perfection, we provide professional
+                        detailing, reliable repairs, and maintenance services you can count on.
+                    </p>
+                </div>
+            </div>
+            <div class="relative mt-16 group">
+                <img alt="Car Detail Hotspots"
+                    class="w-full h-auto object-cover max-h-[600px] rounded-xl shadow-2xl filter brightness-90 group-hover:brightness-100 transition-all duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0CtrcvDfq8C6aLQwShpPtAWZkTo55DCW_j1C9D1135rp2NGJrTNDipF5ON8YZM3IWN0RxgQxm4pSNrFyVTyvHmw798L37vOhFWgDfgvS8eV6vSTI7NOIxmPjEuqW_7EdRBLnMQBatR-5AUfFQA06MfjvYBfk2Dq5wjvt73unb6eQNw90QqI2MtDwFQAZH9rCf0pCs2LesIHtrdSYKCxut5JWwg5RW7Dwl5R0wGk97JOPHr5Nf-9WkSv7eU3VyT8Wz2aTD1yGPpAI" />
+                <div class="absolute top-[35%] left-[25%] group/spot">
+                    <button
+                        class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center font-bold shadow-lg animate-pulse hover:animate-none hover:scale-110 transition-transform">
+                        <span class="material-icons-outlined text-sm">add</span>
+                    </button>
+                    <div
+                        class="hidden group-hover/spot:block absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white p-4 rounded-lg shadow-xl w-48 z-10">
+                        <div class="text-primary font-bold uppercase text-xs mb-1">Expertise</div>
+                        <p class="text-gray-800 text-xs">Skilled professionals ensuring trusted results for bodywork.
+                        </p>
+                        <div
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-3 h-3 bg-white rotate-45">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-[45%] left-[55%] group/spot">
+                    <button
+                        class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center font-bold shadow-lg hover:scale-110 transition-transform">
+                        <span class="material-icons-outlined text-sm">add</span>
+                    </button>
+                    <div
+                        class="hidden group-hover/spot:block absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white p-4 rounded-lg shadow-xl w-48 z-10">
+                        <div class="text-primary font-bold uppercase text-xs mb-1">Shine</div>
+                        <p class="text-gray-800 text-xs">Premium polishing for a mirror-like finish.</p>
+                        <div
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-3 h-3 bg-white rotate-45">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-[50%] right-[20%] group/spot">
+                    <button
+                        class="w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center font-bold shadow-lg hover:scale-110 transition-transform">
+                        <span class="material-icons-outlined text-sm">add</span>
+                    </button>
+                    <div
+                        class="hidden group-hover/spot:block absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white p-4 rounded-lg shadow-xl w-48 z-10">
+                        <div class="text-primary font-bold uppercase text-xs mb-1">Wheels</div>
+                        <p class="text-gray-800 text-xs">Deep cleaning and protection for rims and tires.</p>
+                        <div
+                            class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-3 h-3 bg-white rotate-45">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-gray-800 pt-10">
+                <p class="text-center text-gray-500 text-xs uppercase tracking-widest mb-8">Driving Success Together
+                    With Trusted Partners</p>
+                <div
+                    class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
+                            class="material-icons-outlined">commute</span> ACURA</span>
+                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
+                            class="material-icons-outlined">two_wheeler</span> HONDA</span>
+                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
+                            class="material-icons-outlined">directions_car</span> MERCEDES</span>
+                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
+                            class="material-icons-outlined">local_shipping</span> JAGUAR</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-black" id="pricing">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 mb-4 justify-center">
+                    <span class="material-icons-outlined text-primary text-sm">payments</span>
+                    <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Pricing Plan</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white uppercase mb-4">Flexible Pricing
+                    Options To <br /> Match Your Needs</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-card-dark border border-gray-800 rounded-xl p-8 hover:border-gray-600 transition-colors flex flex-col">
+                    <div class="mb-6">
+                        <span class="material-icons-outlined text-white text-4xl mb-4">directions_car</span>
+                        <h3 class="text-white font-bold uppercase text-lg">Basic Care Plan</h3>
+                        <p class="text-gray-500 text-xs mt-2">Perfect for regular upkeep and quick refresh</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-4xl font-display font-bold text-white">$49</span>
+                        <span class="text-gray-500 text-xs uppercase">/ Per Service</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Exterior hand wash &amp; dry
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Interior vacuum &amp; wipe-down
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Window cleaning (inside &amp; outside)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-500 line-through decoration-gray-600">
+                            <span class="bg-gray-800 text-gray-600 rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">close</span></span>
+                            Full exterior &amp; interior detailing
+                        </li>
+                    </ul>
+                    <a class="block w-full text-center border border-gray-600 text-white py-3 rounded font-bold uppercase text-xs hover:bg-white hover:text-black transition-colors"
+                        href="#">Choose Your Plan</a>
+                </div>
+                <div
+                    class="bg-card-dark border-2 border-primary rounded-xl p-8 transform scale-105 shadow-2xl shadow-primary/10 flex flex-col relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold uppercase px-6 py-1 transform rotate-45 translate-x-6 translate-y-4">
+                        Popular</div>
+                    <div class="mb-6">
+                        <span class="material-icons-outlined text-primary text-4xl mb-4">engineering</span>
+                        <h3 class="text-white font-bold uppercase text-lg">Standard Plan</h3>
+                        <p class="text-gray-400 text-xs mt-2">Recommended for monthly maintenance</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-4xl font-display font-bold text-white">$99</span>
+                        <span class="text-gray-500 text-xs uppercase">/ Per Service</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Exterior hand wash &amp; wax
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Deep Interior vacuum &amp; steam
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Window &amp; Mirror cleaning
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Tire dressing &amp; rim cleaning
+                        </li>
+                    </ul>
+                    <a class="block w-full text-center bg-primary text-white py-3 rounded font-bold uppercase text-xs hover:bg-red-700 transition-colors"
+                        href="#">Choose Your Plan</a>
+                </div>
+                <div
+                    class="bg-card-dark border border-gray-800 rounded-xl p-8 hover:border-gray-600 transition-colors flex flex-col">
+                    <div class="mb-6">
+                        <span class="material-icons-outlined text-white text-4xl mb-4">workspace_premium</span>
+                        <h3 class="text-white font-bold uppercase text-lg">Premium Plan</h3>
+                        <p class="text-gray-500 text-xs mt-2">The ultimate showroom finish</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-4xl font-display font-bold text-white">$189</span>
+                        <span class="text-gray-500 text-xs uppercase">/ Per Service</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Clay bar treatment &amp; sealant
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Full Interior shampoo &amp; condition
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Engine bay cleaning
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="bg-primary/20 text-primary rounded-full p-1"><span
+                                    class="material-icons-outlined text-xs block">check</span></span>
+                            Headlight restoration
+                        </li>
+                    </ul>
+                    <a class="block w-full text-center border border-gray-600 text-white py-3 rounded font-bold uppercase text-xs hover:bg-white hover:text-black transition-colors"
+                        href="#">Choose Your Plan</a>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-wrap justify-center gap-8 text-xs text-gray-500">
+                <span class="flex items-center gap-2"><span
+                        class="material-icons-outlined text-primary text-sm">history</span> Get 30 day free trial
+                    (Subscription)</span>
+                <span class="flex items-center gap-2"><span
+                        class="material-icons-outlined text-primary text-sm">visibility_off</span> No any hidden fee
+                    pay</span>
+                <span class="flex items-center gap-2"><span
+                        class="material-icons-outlined text-primary text-sm">cancel</span> You can cancel anytime</span>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 mb-4 justify-center">
+                <span class="material-icons-outlined text-primary text-sm">compare</span>
+                <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Before / After</span>
+            </div>
+            <h2 class="font-display text-4xl font-bold text-white uppercase mb-12">
+                Before And After Results <br /> That Truly Impress
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Car Polishing"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Paint Polishing</div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Interior Cleaning"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Interior Detailing</div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Foam Wash"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Premium Foam Wash</div>
+                </div>
+                <!-- Second Row -->
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Wheel Cleaning"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Wheel & Rim Care</div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Engine Bay"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Engine Bay Detail</div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img alt="Ceramic Coating Application"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        src="./photos//ceramic.jpg" />
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-icons-outlined text-white text-4xl">compare_arrows</span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-black/70 px-3 py-1 text-white text-xs font-bold rounded">
+                        Ceramic Protection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-black border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="material-icons-outlined text-primary text-sm">help_outline</span>
+                        <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Frequently Asked
+                            Questions</span>
+                    </div>
+                    <h2 class="font-display text-4xl font-bold text-white uppercase mb-6">
+                        Find Answers To Common Car Care Questions
+                    </h2>
+                    <p class="text-gray-400 mb-8 text-sm">Can't find what you are looking for? Contact our support team
+                        for help.</p>
+                    <a class="bg-primary text-white px-6 py-3 rounded font-bold uppercase tracking-wider hover:bg-red-700 transition-all inline-flex items-center gap-2"
+                        href="#contact">
+                        View All FAQs <span class="material-icons-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <div class="border-b border-gray-800 pb-4">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none group">
+                            <span class="text-primary font-bold uppercase text-sm">Q1. How long does a full car
+                                detailing take?</span>
+                            <span
+                                class="material-icons-outlined text-gray-500 group-hover:text-primary transition-colors">keyboard_arrow_up</span>
+                        </button>
+                        <div class="mt-2 text-gray-400 text-sm leading-relaxed">
+                            It depends on the package selected. A standard detail can take 2-4 hours, while full paint
+                            correction and ceramic coating may take 1-2 days to ensure perfection.
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-800 pb-4 pt-4">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none group">
+                            <span
+                                class="text-white font-bold uppercase text-sm group-hover:text-primary transition-colors">Q2.
+                                Can detailing remove scratches from my car?</span>
+                            <span
+                                class="material-icons-outlined text-gray-500 group-hover:text-primary transition-colors">keyboard_arrow_down</span>
+                        </button>
+                    </div>
+                    <div class="border-b border-gray-800 pb-4 pt-4">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none group">
+                            <span
+                                class="text-white font-bold uppercase text-sm group-hover:text-primary transition-colors">Q3.
+                                How often should I get my car detailed?</span>
+                            <span
+                                class="material-icons-outlined text-gray-500 group-hover:text-primary transition-colors">keyboard_arrow_down</span>
+                        </button>
+                    </div>
+                    <div class="border-b border-gray-800 pb-4 pt-4">
+                        <button class="flex justify-between items-center w-full text-left focus:outline-none group">
+                            <span
+                                class="text-white font-bold uppercase text-sm group-hover:text-primary transition-colors">Q4.
+                                Do you provide pick-up and drop-off service?</span>
+                            <span
+                                class="material-icons-outlined text-gray-500 group-hover:text-primary transition-colors">keyboard_arrow_down</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 mb-4 justify-center">
+                    <span class="material-icons-outlined text-primary text-sm">format_quote</span>
+                    <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Testimonials</span>
+                </div>
+                <h2 class="font-display text-4xl font-bold text-white uppercase">
+                    What Our Happy Customers <br /> Say About Us
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative">
+                    <div class="mb-6 opacity-50">
+                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                class="material-icons-outlined">commute</span> JAGUAR</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"My car looks brand new after their detailing
+                        service. The shine is unbelievable, and the team was professional and friendly. Highly
+                        recommend!"</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-white font-bold uppercase text-sm">Priya Sharma</h4>
+                            <p class="text-gray-600 text-xs">Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-card-dark border border-gray-800 p-8 rounded-xl relative transform md:-translate-y-4 shadow-xl border-t-primary border-t-4">
+                    <div class="mb-6 opacity-50">
+                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                class="material-icons-outlined">directions_car</span> VW</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Incredible attention to detail. They removed
+                        stains I thought were permanent. The ceramic coating makes washing so much easier now."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-white font-bold uppercase text-sm">Arjun Patel</h4>
+                            <p class="text-gray-600 text-xs">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative">
+                    <div class="mb-6 opacity-50">
+                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                class="material-icons-outlined">commute</span> ACURA</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Professional, punctual, and perfect results.
+                        Spartan Details is definitely the best detailing service in Melbourne. Worth every penny."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-white font-bold uppercase text-sm">Jenny Wilson</h4>
+                            <p class="text-gray-600 text-xs">Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-primary cursor-pointer"></span>
+                <span class="w-2 h-2 rounded-full bg-gray-700 hover:bg-primary cursor-pointer transition-colors"></span>
+                <span class="w-2 h-2 rounded-full bg-gray-700 hover:bg-primary cursor-pointer transition-colors"></span>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#0a0a0a] border-t border-gray-900 pt-16 pb-8" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="./photos/spartan (1).jpg" alt="Shine Masters Logo" class="h-12 w-auto object-contain">
+                        <span class="font-display font-bold text-xl text-white tracking-wider uppercase">Spartan
+                            Details</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                        We provide expert car detailing, reliable repairs, and trusted maintenance services that restore
+                        shine and enhance performance.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"
+                            href="#"><span class="text-xs">FB</span></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"
+                            href="#"><span class="text-xs">IG</span></a>
+                        <a class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all"
+                            href="#"><span class="text-xs">X</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6">Quick Link</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#pricing">Pricing</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">Exterior Detailing</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Oil Change</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Wheel Alignment</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Air Conditioning Repairs</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Engine Bay Cleaning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-6">Get In Touch</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-outlined text-primary">phone_in_talk</span>
+                            <span>
+                                <span class="block text-white mb-1">Phone:</span>
+                                0494-078-176
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-outlined text-primary">email</span>
+                            <span>
+                                <span class="block text-white mb-1">Email:</span>
+                                spartanshine23@gmail.com
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-outlined text-primary">location_on</span>
+                            <span>
+                                <span class="block text-white mb-1">Location:</span>
+                                123 Ipsum Street, Narre Warren <br /> Melbourne, WC1A 1AA UK
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-900 pt-8 text-center">
+                <p class="text-gray-600 text-xs">Copyright © 2023 Spartan Details. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
