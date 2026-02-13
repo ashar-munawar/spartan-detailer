@@ -60,6 +60,29 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Scroll Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-zoom {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal-zoom.active {
+            opacity: 1;
+            transform: scale(1);
+        }
     </style>
 </head>
 
@@ -839,6 +862,41 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Elements to animate with simple slide-up
+            const slideElements = document.querySelectorAll("section h2, section h3, section p, .bg-card-dark, .grid > div, a[class*='bg-primary'], a[class*='border-white']");
+            slideElements.forEach(el => {
+                if (!el.closest('.no-animate') && !el.classList.contains('reveal')) {
+                    el.classList.add("reveal");
+                    observer.observe(el);
+                }
+            });
+
+            // Elements to animate with zoom
+            const zoomElements = document.querySelectorAll("section img");
+            zoomElements.forEach(el => {
+                if (!el.classList.contains('reveal-zoom')) {
+                    el.classList.add("reveal-zoom");
+                    observer.observe(el);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
