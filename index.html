@@ -84,7 +84,7 @@
             transform: scale(1);
         }
 
-        @keyframes scroll {
+        @keyframes scroll-left {
             0% {
                 transform: translateX(0);
             }
@@ -94,14 +94,30 @@
             }
         }
 
-        .animate-scroll {
-            display: flex;
-            width: max-content;
-            animation: scroll 30s linear infinite;
-            /* Adjusted speed for readability */
+        @keyframes scroll-right {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
         }
 
-        .animate-scroll:hover {
+        .animate-scroll-left {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 50s linear infinite;
+        }
+
+        .animate-scroll-right {
+            display: flex;
+            width: max-content;
+            animation: scroll-right 50s linear infinite;
+        }
+
+        .animate-scroll-left:hover,
+        .animate-scroll-right:hover {
             animation-play-state: paused;
         }
     </style>
