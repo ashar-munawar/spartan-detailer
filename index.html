@@ -83,6 +83,27 @@
             opacity: 1;
             transform: scale(1);
         }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+            /* Adjusted speed for readability */
+        }
+
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 
@@ -205,21 +226,14 @@
                     Get A Free Quote <span class="material-icons-outlined text-sm">arrow_forward</span>
                 </a>
             </div>
-            <div class="bg-card-dark border border-gray-800 p-0 rounded-xl shadow-2xl overflow-hidden relative group">
-                <img alt="Detailing working"
-                    class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdFHn2VNXnbcaKxAeHBBVe9nxM5ldzp0asxSjIgltdFrz7zLxJpEh7kdufI-3ov5omMLJJuZ-7m7IbkLgWwpmL1qsEo0k5RHYiKGWjxWDjlabnygLFDVWNixY1yxhfwYPQLvlufRuLLan2NIVWt0RhSWDoTuPJtfjvzHhgZEePSTFHrFESpyrFRlbSbaOTvXdNppMicjecCZKdWQrX1V4OCLvvlmqMZBrmcESFJwZZfhQZx7y3OW8pc9im50yDSJ3krxxhrYd_zEs" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <div class="flex items-center gap-3 text-white">
-                        <span
-                            class="material-icons-outlined text-primary bg-white/10 p-2 rounded-full">location_on</span>
-                        <div>
-                            <p class="font-bold text-sm">Narre Warren, Melbourne</p>
-                            <p class="text-xs text-gray-400">Victoria, Australia</p>
-                        </div>
-                    </div>
-                </div>
+            <div
+                class="bg-card-dark border border-gray-800 p-0 rounded-xl shadow-2xl overflow-hidden relative group h-[300px] md:h-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5146317208!2d145.2896!3d-38.0267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad612450890250d%3A0x5045675218ce7e0!2sNarre%20Warren%20VIC%203805!5e0!3m2!1sen!2sau!4v1707831234567!5m2!1sen!2sau"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="filter grayscale hover:grayscale-0 transition-all duration-500">
+                </iframe>
             </div>
         </div>
     </div>
@@ -428,21 +442,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-16 border-t border-gray-800 pt-10">
-                <p class="text-center text-gray-500 text-xs uppercase tracking-widest mb-8">Driving Success Together
-                    With Trusted Partners</p>
-                <div
-                    class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
-                            class="material-icons-outlined">commute</span> ACURA</span>
-                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
-                            class="material-icons-outlined">two_wheeler</span> HONDA</span>
-                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
-                            class="material-icons-outlined">directions_car</span> MERCEDES</span>
-                    <span class="font-display text-2xl font-bold text-white flex items-center gap-2"><span
-                            class="material-icons-outlined">local_shipping</span> JAGUAR</span>
-                </div>
-            </div>
+
         </div>
     </section>
     <section class="py-20 bg-black" id="pricing">
@@ -734,56 +734,108 @@
                     What Our Happy Customers <br /> Say About Us
                 </h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative">
-                    <div class="mb-6 opacity-50">
-                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
-                                class="material-icons-outlined">commute</span> JAGUAR</span>
+            <div class="overflow-hidden relative w-full">
+                <div class="animate-scroll gap-8">
+                    <!-- Original Reviews -->
+                    <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">commute</span> JAGUAR</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"My car looks brand new after their
+                            detailing
+                            service. The shine is unbelievable, and the team was professional and friendly. Highly
+                            recommend!"</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Priya Sharma</h4>
+                                <p class="text-gray-600 text-xs">Marketing Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"My car looks brand new after their detailing
-                        service. The shine is unbelievable, and the team was professional and friendly. Highly
-                        recommend!"</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h4 class="text-white font-bold uppercase text-sm">Priya Sharma</h4>
-                            <p class="text-gray-600 text-xs">Marketing Manager</p>
+                    <div
+                        class="bg-card-dark border border-gray-800 p-8 rounded-xl relative transform md:-translate-y-4 shadow-xl border-t-primary border-t-4 w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">directions_car</span> VW</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Incredible attention to detail. They
+                            removed
+                            stains I thought were permanent. The ceramic coating makes washing so much easier now."</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Arjun Patel</h4>
+                                <p class="text-gray-600 text-xs">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">commute</span> ACURA</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Professional, punctual, and perfect
+                            results.
+                            Spartan Details is definitely the best detailing service in Melbourne. Worth every penny."
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Jenny Wilson</h4>
+                                <p class="text-gray-600 text-xs">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Reviews for Infinite Scroll -->
+                    <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">commute</span> JAGUAR</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"My car looks brand new after their
+                            detailing
+                            service. The shine is unbelievable, and the team was professional and friendly. Highly
+                            recommend!"</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Priya Sharma</h4>
+                                <p class="text-gray-600 text-xs">Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-card-dark border border-gray-800 p-8 rounded-xl relative transform md:-translate-y-4 shadow-xl border-t-primary border-t-4 w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">directions_car</span> VW</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Incredible attention to detail. They
+                            removed
+                            stains I thought were permanent. The ceramic coating makes washing so much easier now."</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Arjun Patel</h4>
+                                <p class="text-gray-600 text-xs">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative w-[350px] flex-shrink-0">
+                        <div class="mb-6 opacity-50">
+                            <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
+                                    class="material-icons-outlined">commute</span> ACURA</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Professional, punctual, and perfect
+                            results.
+                            Spartan Details is definitely the best detailing service in Melbourne. Worth every penny."
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-sm">Jenny Wilson</h4>
+                                <p class="text-gray-600 text-xs">Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="bg-card-dark border border-gray-800 p-8 rounded-xl relative transform md:-translate-y-4 shadow-xl border-t-primary border-t-4">
-                    <div class="mb-6 opacity-50">
-                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
-                                class="material-icons-outlined">directions_car</span> VW</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Incredible attention to detail. They removed
-                        stains I thought were permanent. The ceramic coating makes washing so much easier now."</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h4 class="text-white font-bold uppercase text-sm">Arjun Patel</h4>
-                            <p class="text-gray-600 text-xs">Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-card-dark border border-gray-800 p-8 rounded-xl relative">
-                    <div class="mb-6 opacity-50">
-                        <span class="font-display text-xl font-bold text-white flex items-center gap-2"><span
-                                class="material-icons-outlined">commute</span> ACURA</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">"Professional, punctual, and perfect results.
-                        Spartan Details is definitely the best detailing service in Melbourne. Worth every penny."</p>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h4 class="text-white font-bold uppercase text-sm">Jenny Wilson</h4>
-                            <p class="text-gray-600 text-xs">Manager</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 flex justify-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-primary cursor-pointer"></span>
-                <span class="w-2 h-2 rounded-full bg-gray-700 hover:bg-primary cursor-pointer transition-colors"></span>
-                <span class="w-2 h-2 rounded-full bg-gray-700 hover:bg-primary cursor-pointer transition-colors"></span>
             </div>
         </div>
     </section>
